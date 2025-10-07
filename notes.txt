@@ -1,0 +1,8 @@
+# To install:
+conda create -n mast3r-slam python=3.11 --solver classic
+
+# I was getting issues as the defsault solver was libmamba so I set it back to classic:
+conda config --set solver classic
+
+# 
+conda install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 pytorch-cuda=12.4 -c pytorch -c nvidia
